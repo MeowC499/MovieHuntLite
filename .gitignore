@@ -1,0 +1,21 @@
+# Ignore these
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.DS_Store
+.env
+
+# Big data files
+data/*.csv
+data/*.tsv
+data/*.pth
+data/*.dat
+model/*.pth
+
+# Keep only model structure + encoders
+!model/ncf_hybrid_model.pth
+!model/user_encoder.pkl
+!model/item_encoder.pkl
